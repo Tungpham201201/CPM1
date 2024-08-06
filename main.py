@@ -14,8 +14,9 @@ from rich.text import Text
 from rich.style import Style
 from cpmnuker import CPMNuker
 
-__CHANNEL_USERNAME__ = "CPMNuker"
-__GROUP_USERNAME__   = "CPMNukerChat"
+__Telegram__ = "Roasted2001"
+__Zalo__   = "0983544223"
+__Youtube__ = "roasted_2001"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
