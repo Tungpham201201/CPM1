@@ -12,7 +12,7 @@ from rich.console import Console
 from rich.prompt import Prompt, IntPrompt
 from rich.text import Text
 from rich.style import Style
-from cpmnuker import CPMNuker
+from cpmrst import CPM
 
 __CHANNEL_USERNAME__ = "Roasted2001"
 __ZALO__   = "0983544223"
