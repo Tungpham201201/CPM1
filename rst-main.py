@@ -14,8 +14,9 @@ from rich.text import Text
 from rich.style import Style
 from cpmnuker import CPMNuker
 
-__CHANNEL_USERNAME__ = "CPMNuker"
-__GROUP_USERNAME__   = "CPMNukerChat"
+__CHANNEL_USERNAME__ = "Roasted2001"
+__ZALO__   = "0983544223"
+__YOUTUBE__ = "roasted_2001"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -40,12 +41,12 @@ def gradient_text(text, colors):
 
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
-    brand_name =  " ██████╗██████╗ ███╗   ███╗███╗   ██╗██╗   ██╗██╗  ██╗███████╗██████╗\n"
-    brand_name += "██╔════╝██╔══██╗████╗ ████║████╗  ██║██║   ██║██║ ██╔╝██╔════╝██╔══██╗\n"
-    brand_name += "██║     ██████╔╝██╔████╔██║██╔██╗ ██║██║   ██║█████╔╝ █████╗  ██████╔╝\n"
-    brand_name += "██║     ██╔═══╝ ██║╚██╔╝██║██║╚██╗██║██║   ██║██╔═██╗ ██╔══╝  ██╔══██╗\n"
-    brand_name += "╚██████╗██║     ██║ ╚═╝ ██║██║ ╚████║╚██████╔╝██║  ██╗███████╗██║  ██║\n"
-    brand_name += " ╚═════╝╚═╝     ╚═╝     ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝\n"
+    brand_name =  " ██████╗ ██████╗  ███╗   ███╗\n"
+    brand_name += "██╔════╝██╔══██╗████╗ ████║\n"
+    brand_name += "██║        ██████╔╝██╔████╔██║\n"
+    brand_name += "██║        ██╔═══╝ ██║╚██╔  ██║\n"
+    brand_name += "╚██████╗██║        ██║ ╚═╝  ██║\n"
+    brand_name += " ╚═════╝╚═╝        ╚═╝        ╚═╝\n"
     colors = [
         "rgb(255,0,0)", "rgb(255,69,0)", "rgb(255,140,0)", "rgb(255,215,0)", "rgb(173,255,47)", 
         "rgb(0,255,0)", "rgb(0,255,255)", "rgb(0,191,255)", "rgb(0,0,255)", "rgb(139,0,255)",
@@ -53,8 +54,9 @@ def banner(console):
     ]
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text)
-    console.print("[bold green]♕ CPMNuker[/bold green]: Car Parking Multiplayer Hacking Tool.")
-    console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue] or [bold blue]@{__GROUP_USERNAME__}[/bold blue].")
+    console.print("[bold green]♕ roasted2001[/bold green]: Car Parking Multiplayer Hacking Tool.")
+    console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue] or [bold green]♕ Zalo[bold blue]{__ZALO__}[/bold blue].")
+    console.print(f"[bold green]♕ YOUTUBE[/bold green]: [bold blue]@{__YOUTUBE__}[/bold blue].")
     console.print("[bold red]==================================================[/bold red]")
     console.print("[bold yellow]! Note[/bold yellow]: Logout from CPM before using this tool !.", end="\n\n")
 
@@ -78,7 +80,6 @@ def load_player_data(cpm):
 def load_key_data(cpm):
     data = cpm.get_key_data()
     console.print("[bold][red]========[/red][ ACCESS KEY DETAILS ][red]========[/red][/bold]")
-    console.print(f"[bold green]Access Key [/bold green]: { data.get('access_key') }.")
     console.print(f"[bold green]Telegram ID[/bold green]: { data.get('telegram_id') }.")
     console.print(f"[bold green]Credits    [/bold green]: { (data.get('coins') if not data.get('is_unlimited') else 'Unlimited') }.", end="\n\n")
 
