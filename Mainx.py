@@ -81,7 +81,7 @@ def load_player_data(cpm):
 def load_key_data(cpm):
     data = cpm.get_key_data()
     console.print("[bold][red]========[/red][blue][ MOD MENU TABLE ][/blue][red]========[/red][/bold]")
-    console.print(f"[bold green]Telegram ID[/bold green]: { data.get('telegram_id') }.")
+    console.print("[bold green]Chat me:[/bold green][bold red] https://m.me/thanhtung0701[/bold red]")
     console.print(f"[bold green]Credits    [/bold green]: [bold yellow]{ (data.get('coins') if not data.get('is_unlimited') else 'ROASTED_AMONYMOUS') }[/bold yellow].", end="\n\n")
 
 def prompt_valid_value(content, tag, password=False):
