@@ -15,7 +15,8 @@ from rich.style import Style
 from cpmnuker import CPMNuker
 
 __CHANNEL_USERNAME__ = "Roasted2001"
-__GROUP_USERNAME__   = "Zalo: 0983544223"
+__GROUP_USERNAME__   = "0983544223"
+__YOUTUBE__ = "roasted_2001"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -40,10 +41,10 @@ def gradient_text(text, colors):
 
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
-    brand_name =  " ██████╗ ██████╗  ███╗   ███╗\n"
-    brand_name += "██╔════╝██╔══██╗████╗ ████║\n"
-    brand_name += "██║        ██████╔╝██╔████╔██║\n"
-    brand_name += "██║        ██╔═══╝ ██║╚██╔  ██║\n"
+    brand_name =  " ██████╗ ██████╗   ███╗   ███╗\n"
+    brand_name += "██╔════╝██╔══██╗  ████╗ ████║\n"
+    brand_name += "██║     ██████╔╝   ██╔████╔██║\n"
+    brand_name += "██║     ██╔═══╝    ██║╚██╔  ██║\n"
     brand_name += "╚██████╗██║        ██║ ╚═╝  ██║\n"
     brand_name += " ╚═════╝╚═╝        ╚═╝        ╚═╝\n"
     colors = [
@@ -53,8 +54,10 @@ def banner(console):
     ]
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text)
-    console.print("[bold green]♕ CPM[/bold green]: Car Parking Multiplayer Hacking Tool.")
-    console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue] or [bold blue]@{__GROUP_USERNAME__}[/bold blue].")
+    console.print("[bold green]♕ CPKVN[/bold green]: Car Parking Multiplayer Hacking Tool.")
+    console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue].")
+    console.print(f"[bold green]♕ Zalo[/bold green]: [bold blue]@{__GROUP_USERMAME__}[/bold blue].")
+    console.print(f"[bold green]♕ Youtube[/bold green]: [bold blue]@{__YOUTUBE__}[/bold blue].")
     console.print("[bold red]==================================================[/bold red]")
     console.print("[bold yellow]! Note[/bold yellow]: Logout from CPM before using this tool !.", end="\n\n")
 
