@@ -44,8 +44,7 @@ class cpmrst:
             "account_auth": self.auth_token,
             "amount": amount
         }
-            response_decoded = response.json()
-        return response_decoded.get("ok")
+            return response_decoded.get("ok")
     
     def set_player_coins(self, amount) -> bool:
         payload = {
